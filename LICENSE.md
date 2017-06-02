@@ -1,4 +1,5 @@
 ---
+layout: general
 ---
 ## creative commons
 
