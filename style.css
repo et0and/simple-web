@@ -1,5 +1,5 @@
 .container {
-  font-family: Merriweather, Lora, Alegreya, 'Noto Serif', serif;
+  font-family: Alegreya, Merriweather, Lora, 'Noto Serif', serif;
   width: 90%;
   max-width: 1000px;
   margin: auto;
@@ -9,6 +9,9 @@ main {
 }
 footer {
   font-size: small;
+}
+.yelllll {
+  letter-spacing: -2px;
 }
 .cc-circle {
   font-family: sans-serif;
