@@ -1,0 +1,24 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix simpleweb: <http://simpleweb.iscute.ovh/ns.ttl#> .
+
+##### PROPERTIES #####
+simpleweb:description a rdf:Property ;
+  rdfs:label "description"@en-GB ;
+  rdfs:comment "The human-readable description of the script for the user."@en-GB ;
+  rdfs:isDefinedBy simpleweb: ;
+  rdfs:subPropertyOf rdfs:comment ;
+  rdfs:range xsd:string .
+
+simpleweb:dependencies a rdf:Property ;
+  rdfs:label "list of dependencies"@en-GB ;
+  rdfs:comment "The list of other resources that this resource depends on."@en-GB ;
+  rdfs:isDefinedBy simpleweb: ;
+  rdfs:range simpleweb:selectors_list .
+
+simpleweb:selectors_list a rdfs:Datatype ;
+  rdfs:label "CSS selectors list type string" ;
+  rdfs:comment "comma-separated list of CSS selectors that refer to other resources"@en-GB ;
+  rdfs:isDefinedBy simpleweb: ;
+  rdfs:subClassOf xsd:string .
